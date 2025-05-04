@@ -9,10 +9,16 @@ const Nav = () => {
             <button
                 className={styles.burger}
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle navigation menu"
+                aria-expanded={isOpen}
+                aria-controls="navigation-menu"
             >
                 ☰
             </button>
-            <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
+            <ul
+                id="navigation-menu"
+                className={`${styles.navList} ${isOpen ? styles.open : ''}`}
+            >
                 <li>
                     <a href="/">Home</a>
                 </li>
