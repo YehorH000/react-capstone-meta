@@ -1,0 +1,131 @@
+.specialsSection {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.specialsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.specialsTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.specialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 1rem;
+}
+
+.cardTitlePrice {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cardText {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.cardFooter {
+  padding: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #495e57;
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.heroText {
+  flex: 1;
+  min-width: 280px;
+  margin-right: 2rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  color: #f4ce14;
+  margin-bottom: 0.5rem;
+}
+
+.heroLocation {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroDescription {
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.reserveButton {
+  background-color: #f4ce14;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.heroImageWrapper {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 1rem;
+}
+
+.onlineMenu {
+  background-color: #f4ce14;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.onlineMenu:hover {
+  background-color: #e4be10;
+}
