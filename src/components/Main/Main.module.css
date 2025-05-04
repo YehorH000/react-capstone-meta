@@ -129,3 +129,40 @@
 .onlineMenu:hover {
   background-color: #e4be10;
 }
+
+/*  */
+.heroImageWrapper {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%; /* 🔧 не выходить за пределы */
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #495e57;
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem; /* 🔧 пространство между колонками */
+}
+
+.heroText {
+  flex: 1;
+  min-width: 280px;
+  margin-right: 2rem;
+  max-width: 600px; /* 🔧 чтобы не тянулся слишком */
+}

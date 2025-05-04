@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Nav.module.css'
 
 const Nav = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <nav className={styles.nav}>
-            <ul className={styles.navList}>
+            <button
+                className={styles.burger}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                ☰
+            </button>
+            <ul className={`${styles.navList} ${isOpen ? styles.open : ''}`}>
                 <li>
                     <a href="/">Home</a>
                 </li>
